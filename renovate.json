@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+            "config:base",
+            ":enableVulnerabilityAlerts",
+            ":prConcurrentLimitNone",
+            ":prHourlyLimitNone"
+        ],
+        "ignorePresets": [":prHourlyLimit2", ":autodetectPinVersions", ":prConcurrentLimit20", "group:monorepos", "group:recommended"],
+        "rangeStrategy": "bump",
+        "baseBranches": ["npm-updates"],       
+        "lockFileMaintenance": {"enabled": false}
+}
