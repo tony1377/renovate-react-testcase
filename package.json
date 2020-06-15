@@ -8,8 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/react": "^15.0.0",
     "react": "^15.0.0"
+  },
+  "peerDependencies": {
+        "react": "^16.9.0"
   }
 }
